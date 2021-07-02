@@ -1,3 +1,6 @@
+name = input('What is your name?\n> ')
+print(f'Hello, {name}!')
+
 import random
 
 print('Rolling the dice...')
@@ -9,3 +12,8 @@ Dice.append(random.randint(1,6))
 print(f'Die 1: {Dice[0]}')
 print(f'Die 1: {Dice[1]}')
 print(f'Total value: {sum(Dice)}')
+
+if sum(Dice) > 7:
+    print(f'{name} won!')
+else:
+    print(f'{name} lost!')
